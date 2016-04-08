@@ -1,4 +1,6 @@
 # Logs
+.env
+*.plist
 logs
 *.log
 npm-debug.log*

@@ -1,0 +1,30 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "Landing Page for redothecube.com",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmenglis/landing-page.git"
+  },
+  "keywords": [
+    "landing",
+    "node",
+    "sendy",
+    "hbs"
+  ],
+  "author": "Josh English <josh@joshenglish.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmenglis/landing-page/issues"
+  },
+  "homepage": "https://github.com/jmenglis/landing-page#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0"
+  }
+}
