@@ -14,7 +14,10 @@ app.engine('hbs', exphbs({
 
 app.set('view engine', 'hbs'); // matching the engine
 
+// Global Variables
+app.locals.companyName = 'redothecube';
 
+// Setting Route
 app.get('/', function(req, res) {
   res.render('home', { title: 'take your work to the next level' });
 });
