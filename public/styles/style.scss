@@ -1,9 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700,800);
+$font-stack: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 body {
   background-image: url(../images/bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  font-family: $font-stack;
 }
 
 .embed-container {
@@ -19,6 +23,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
 }
