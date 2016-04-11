@@ -1,8 +1,18 @@
 // Require our dependencies
 // ------------------------
+require('dotenv').config();
+
 var express = require('express'),
     exphbs  = require('express-handlebars'),
+    bodyParser = require('body-parser'),
     app     = express();
+
+// database
+require('./db/database');
+
+// controllers
+
+var controllers = require('./controllers/users')
 
 // Configure settings
 app.set('views', __dirname + '/views');
@@ -11,6 +21,8 @@ app.engine('hbs', exphbs({
   defaultLayout: 'default',
   extname:       '.hbs'
 }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }))
 
 app.set('view engine', 'hbs'); // matching the engine
 
@@ -18,9 +30,9 @@ app.set('view engine', 'hbs'); // matching the engine
 app.locals.companyName = 'redothecube';
 
 // Setting Route
-app.get('/', function(req, res) {
-  res.render('home', { title: 'take your work to the next level' });
-});
+
+app.use('/', controllers);
+
 
 // Start a server
 // --------------
