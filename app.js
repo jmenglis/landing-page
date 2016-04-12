@@ -22,7 +22,7 @@ app.engine('hbs', exphbs({
   extname:       '.hbs'
 }));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.set('view engine', 'hbs'); // matching the engine
 

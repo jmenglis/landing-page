@@ -20,6 +20,6 @@ controller.get('/', function(req, res, next) {
     console.log(users);
     res.send("Hello I'm almost there");
   });
-})
+});
 
 module.exports = controller;
