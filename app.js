@@ -8,7 +8,7 @@ var express = require('express'),
     app     = express();
 
 // database
-require('./db/database');
+// require('./db/database');
 
 // controllers
 

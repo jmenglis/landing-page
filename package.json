@@ -28,6 +28,7 @@
     "dotenv": "^2.0.0",
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
-    "mongoose": "^4.4.12"
+    "mongoose": "^4.4.12",
+    "sendy-api": "^0.1.0"
   }
 }
