@@ -1,7 +1,7 @@
 {
   "apps" : [{
     "name"       : "redothecube",
-    "script"      : "./app",
+    "script"      : "./app.js",
     "watch"       : true,
     "env": {
       "NODE_ENV": "development",
