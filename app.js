@@ -3,7 +3,6 @@
 require('dotenv').config();
 
 var express = require('express'),
-    exphbs  = require('express-handlebars'),
     bodyParser = require('body-parser'),
     app     = express();
 
@@ -17,10 +16,6 @@ var controllers = require('./controllers/users')
 // Configure settings
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
-app.engine('hbs', exphbs({
-  defaultLayout: 'default',
-  extname:       '.hbs'
-}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
