@@ -15,9 +15,12 @@ controller.get('/', function(req, res, next) {
     list_id: 'GpswvjGyR1waosIDv892dL6w'
   }
   sendy.subscribe(params, function(err, result) {
-    if (err) console.log(err.toString());
+    if (err) {
+    res.render('alreadyregistered', { title: 'email already registered', user: params })
+    } else {
     console.log('Subscribed Successfully');
-    res.send('You have successfully registered ' + params.email +'.');
+     res.render('registered', { title: 'welcome to the cubers' user: params });
+    }
   });
 });
 
