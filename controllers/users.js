@@ -19,7 +19,7 @@ controller.get('/', function(req, res, next) {
     res.render('alreadyregistered', { title: 'email already registered', user: params })
     } else {
     console.log('Subscribed Successfully');
-     res.render('registered', { title: 'welcome to the cubers' user: params });
+     res.render('registered', { title: 'welcome to the cubers', user: params });
     }
   });
 });
