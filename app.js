@@ -3,9 +3,9 @@
 require('dotenv').config();
 
 var express = require('express'),
+    path = require('path'),
     bodyParser = require('body-parser'),
     app     = express();
-
 // database
 // require('./db/database');
 
