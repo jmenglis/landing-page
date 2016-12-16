@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700,800);
+@import url(normalize.css);
+@import url(skeleton.css);
 body {
   background-image: url(../images/bg.jpg);
   background-position: center center;
@@ -7,6 +9,8 @@ body {
   background-size: cover;
   font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white; }
+  body input {
+    color: black; }
 
 .embed-container {
   position: relative;

@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700,800);
 $font-stack: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@import "normalize.css";
+@import "skeleton.css";
+
 
 body {
   background-image: url(../images/bg.jpg);
@@ -9,6 +12,9 @@ body {
   background-size: cover;
   font-family: $font-stack;
   color: white;
+  input {
+    color: black;
+  }
 }
 
 .embed-container {
